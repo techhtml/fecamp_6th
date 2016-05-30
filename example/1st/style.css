@@ -1,0 +1,26 @@
+header {}
+div {
+  /**
+  * clearfix
+  * float된 요소의 부모요소가 높이를 가질 수 있게 하는 것
+  */
+  overflow: hidden;
+  /*
+  * flow란 용어
+  * flow : 흐르다
+  */
+  /* 여기는 주석입니다 */
+}
+main {
+  float:right;
+  width:25%;
+}
+section {
+  float:right;
+  width:25%;
+}
+aside {
+  float:left;
+  width:25%;
+}
+footer {}

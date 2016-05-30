@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello world</title>
+    <style>
+      div {
+
+      }
+      .layout-left { /* layout-left 라는 클래스를 가진 요소에 CSS를 준다 : 클래스 셀렉터 */
+        float: left;
+      }
+      .layout-right { /* layout-right 라는 클래스를 가진 요소에 CSS를 준다 : 클래스 셀렉터 */
+        float: right;
+      }
+      #wrap {
+        color:red;
+      }
+      #wrap.blue {
+        color:blue;
+      }
+      footer .layout-left {
+
+      }
+      /*
+        width
+        가로사이즈
+        px (픽셀)
+        100% (부모의 기준사이즈)
+      */
+
+      /**
+       * #wrap의 자식요소 기준 width:100% = 1020px;
+       */
+       #wrap .layout-left {
+         width:50%;
+       }
+       #wrap .layout-right {
+         width:50%;
+       }
+
+       /**
+        * height
+        * 100% (부모의 기준사이즈)
+        */
+        /*
+        #wrap {
+          height:480px;
+        }
+        #wrap .layout-left {
+          height:100%;
+          background:green;
+          vertical-align은 되지 않음
+        }
+        #wrap .layout-right {
+          height:100%;
+        }
+        html, body {
+          height:100%;
+        }
+        */
+        /**
+         * 부모요소의 가로사이즈 : 1020px
+         * 자식요소가 4개
+         * 자식요소의 width(width속성 + padding-left, padding-right, margin-left, margin-right, border-left, border-right)가
+         * 자식요소갯수 / 부모요소의 가로사이즈
+         * 자식요소의 width를 다 더한게 부모요소의 가로사이즈보다 넘치면 안된다
+         */
+        /**
+         * padding & margin
+         */
+         .layout-right {
+            color:#fff;
+            background:hotpink;
+            /**
+             * 축약형
+             * padding: <top> <right> <bottom> <left>;
+             */
+            padding: 15px 13px;
+            box-sizing:border-box;
+         }
+         .layout-left {
+           color:#fff;
+           background:hotpink;
+           text-align:center;
+           /*
+            * width: 25%
+            * + padding-left + padding-right
+            * + margin-left + margin-right
+            */
+           padding-left:15px;
+           padding-right:15px;
+           padding-top:15px;
+           padding-bottom:13px;
+           /*
+            * box-sizing (CSS3, IE7까지 지원을 하지 않음)
+            */
+            box-sizing:border-box;
+         }
+         .layout-left {
+           /* margin:25px 0; */
+           margin-top:25px;
+           margin-bottom:25px;
+         }
+         /**
+          * border
+          */
+          .layout-left {
+            border:5px solid blue;
+          }
+          /**
+           * margin vs padding
+           * margin collapse (마진 병합현상)
+           */
+
+          .collapse {
+            margin:50px;
+          }
+          .padding-test {
+            padding:50px;
+          }
+          .collapse-wrap {
+            background:pink;
+          }
+          /**
+           * block vs inline-level
+           * block (블록)
+           * 쌓이는 구조
+           * 가지가 가질 수 있는 width는 다 가져요 (width:100%);
+           * width, height, padding, margin, border
+           * inline-level (인라인)
+           * 라인 안에 그냥 있음
+           * padding(좌우), margin(좌우), border
+           */
+           p {
+             width:980px;
+             margin:auto;
+           }
+    </style>
+  </head>
+  <body>
+    <p>Rafael Nadal pulls out of French <strong>Open</strong> with wrist problem before third round</p>
+    <p>Rafael Nadal’s shock withdrawal from the 2016 French Open, virtually his personal property since he won the first of his nine titles here on his debut 11 years ago, not only cast a cloud over Roland Garros on Friday but brought into question the Spaniard’s immediate and perhaps long-term future.</p>
+    <div class="collapse-wrap">
+      <div class="collapse">콜램스</div>
+      <div class="collapse">콜램스</div>
+    </div>
+
+    <header></header>
+    <div id="wrap">
+      <!-- 2단 레이아웃 -->
+      <div class="layout-left">
+        <!-- 2단 레이아웃 -->
+        <main class="layout-left">1</main>
+        <section class="layout-left">2</section>
+      </div>
+      <div class="layout-right">
+        <section class="layout-left">3</section>
+        <aside class="layout-left">4</aside>
+      </div>
+    </div>
+    <footer>
+      <div class="layout-left"></div>
+      <div class="layout-right"></div>
+    </footer>
+  </body>
+</html>

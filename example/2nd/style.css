@@ -1,0 +1,77 @@
+header {
+  color:#000;
+  background:#fff;
+}
+header ul {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+header li {
+  float:left;
+  list-style:none;
+  padding:5px 6px 3px;
+}
+header div {
+  overflow:hidden;
+}
+header a {
+  color:inherit;
+  text-decoration:none;
+}
+header a:hover {
+  text-decoration:underline;
+}
+header h1 {
+  text-align:right;
+  margin:17px 0 14px;
+}
+.personal_menu {
+  float: left;
+}
+.etc_menu {
+  float: right;
+}
+main {}
+section {
+  overflow:hidden;
+  width:1020px;
+}
+section h2 {
+  float:left;
+  width:200px;
+}
+section .content {
+  float:left;
+  width:820px;
+}
+
+.card {
+  float:left;
+  margin-right:20px;
+  background:#951c55;
+  color:#fff;
+  font-weight:300;
+}
+.card-big {
+  width:390px;
+}
+.card-wide {
+  width:390px;
+  font-size:0.5em;
+}
+.card-long {
+  width:180px;
+}
+
+.card .title {
+  font-size:1.1em;
+}
+.card .title strong {
+  font-weight:inherit;
+  color:rgba(255,255,255, 0.5);
+}
+.card p {
+  font-size:0.9em;
+  color:rgba(255,255,255, 0.8);
+}

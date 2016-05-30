@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Hello world</title>
+    <style>
+      /**
+       * OOCSS
+       */
+      .float-box {
+        overflow:hidden;
+      }
+      .float-box div {
+        float:left;
+      }
+      .float-box.float_2 div {
+        width:50%;
+      }
+      .float-box.float_3 div{
+        width:33.333333%;
+        /* 소숫점 뒷자리는 반복한다면 6자리까지 */
+      }
+      .float-box.float_4 div {
+        width:25%;
+      }
+      .flex-box {
+        display:-webkit-box;
+        display:-moz-box;
+        display:-ms-flexbox;
+        display:-webkit-flex;
+        display:flex;
+      }
+      .flex_all div {
+        -webkit-box-flex:1;
+        -moz-box-flex:1;
+        -webkit-flex:1;
+        -ms-flex:1;
+        flex:1;
+      }
+      .thumb {
+        width:180px;
+      }
+      .flex_1 {
+        -webkit-box-flex:1;
+        -moz-box-flex:1;
+        -webkit-flex:1;
+        -ms-flex:1;
+        flex:1;
+      }
+      .flex-box .flex_2 {
+        -webkit-box-flex:2;
+        -moz-box-flex:2;
+        -webkit-flex:2;
+        -ms-flex:2;
+        flex:2;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="flex-box">
+        <div class="thumb">width - 180</div>
+        <div class="flex_1">브라우저 사이즈에 맞게 늘어났따 줄어났다</div>
+      </div>
+      <div class="flex-box flex_all">
+        <div>1</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+      </div>
+      <div class="float-box float_2">
+        <div>1</div>
+        <div>2</div>
+      </div>
+      <div class="float-box float_3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class="float-box float_4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+    </div>
+  </body>
+</html>

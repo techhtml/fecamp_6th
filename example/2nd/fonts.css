@@ -1,0 +1,119 @@
+/**
+ * - CSS의 폰트와 색상에 대하여
+ * - CSS Font(Family, size, weight)
+ * - CSS Text(align, justify)
+ * - CSS Color
+ * - CSS Background (url, position, color, size)
+ */
+
+body {
+  font-family: "Helvetica NEUE", "APPLE SD Gothic NEO", "Malgun Gothic", sans-serif;
+  /**
+   * Helvetica NEUE (영문전용폰트)
+   * APPLE SD Gothic NEO (한글, 영문, 일본어)
+   * font-family: "Dotum", "돋움";
+   * font-family : 내가 이 사이트에서 어떤 폰트를 쓸 것인가
+   * APPLE SD Gothic NEO : 맥북의 기본 폰트, 아이폰의 기본 폰트
+   * Malgun Gothic : 윈도우의 기본 폰트
+   * General Fonts : 키워드로 폰트의 집합을 나타냄
+   * sans-serif : 고딕
+   * serif : 명조
+   * monospace : 고정폭
+   * fantasy : 요상한...
+   * cursive : 필기체
+   * 안드로이드 4.4 ~ : noto sans CJK (본고딕)
+   * 안드로이드 3.0 ~ : Roboto(영문전용폰트), Droid sans fallback (268개국어 지원)
+   * 삼성 : 삼성 고딕, LG : LG스마트고딕(산돌고딕 네오2), 팬텍 : 베가 고딕
+   */
+   font-size: 18px;
+   /**
+    * font-size, 폰트 사이즈
+    * em 단위
+    */
+}
+body p {
+  /**
+   * em : 상대단위
+   * 부모의 폰트사이즈에 상대하는 단위
+   * 부모 폰트사이즈 : 16px
+   * 1em = 16px
+   * 2em = 32px
+   */
+  font-size: 2em; /* font-size: 32px */
+}
+body p strong {
+  /* 얘의 폰트사이즈 24px */
+  /* 1em = 32px */
+  /* rem = 바디의 폰트사이즈, IE가 지원을 하지 않음  */
+  font-size: 1.5rem;
+  line-height: 1em; /* 행간 */
+  font-weight: 400;
+  /**
+   * font-weight : 폰트의 굵기
+   * 100 ~ 900
+   * 100 : Thin - 얉은거
+   * 200 : Ultra Light
+   * 300 : Light
+   * 400 : Normal - 기본
+   * 500 : Medium
+   * 600 : semibold
+   * 700 : bold - 두꺼운 거
+   * 800 : bolder
+   * 900 : black
+   */
+}
+section {
+  text-align:center;
+  /**
+   * text-align
+   * left, center, right
+   * justify (영문만 지원)
+   */
+   text-indent: 100px;
+   /*
+    * indent는 들여쓰기 (첫 줄만)
+    */
+    text-decoration: line-through;
+    /*
+     * line-through : 취소선
+     * underline : 밑줄
+     * overline : 윗줄
+     * none : 밑줄, 취소선 제거
+     */
+}
+/**
+ * color & background
+ * 색상 & 배경(이미지, 색상, 그라디언트)
+ */
+body {
+  color: yellow;
+}
+article {
+  /* 폰트 색상 */
+  color: #000;
+  /* 배경 색상 */
+  background:rgb();
+  background:rgba(255, 255, 0, 1);  /* IE가 지원하지 않아요 */
+  /*
+   * rgba (Red, Green, Blue, Alpha)
+   * Alpha 0 ~ 1
+   * Alpha값 10% - 0.1
+   */
+   background-color: hsl(); /* IE가 지원하지 않아요 */
+   background-color: hsla(210, 75%, 75%, 1);  /* IE가 지원하지 않아요 */
+   /**
+    * Hue : 색상
+    * Saturation : 채도
+    * Lightness : 명도
+    * Alpha : 밝기
+    */
+    background: currentColor; /* IE가 지원하지 않아요. 안드로이드 2.x대가 지원하지 않아요 */
+}
+div {
+    background:url() center center no-repeat #000;
+    background-image:url("https://scontent.xx.fbcdn.net/v/t1.0-1/p160x160/13260082_1036974029718908_596162990836331416_n.jpg?oh=d97ec9871c8471ab1a669595891557bc&oe=57D52829");
+    background-position: center center; /* 앞의 center는 X축, 뒤의 center는 Y축 */
+    background-repeat:no-repeat;
+    background-color: #000;
+    background-size: cover; /* CSS3 */
+}
