@@ -1,0 +1,30 @@
+header {}
+header div {}
+header h1 {}
+header ul {
+  /**
+   * display: block인 요소에
+   * padding이나 margin이 들어갈 때,
+   * width가 정의되어 있지 않다면,
+   * 100%에서 그 값을 뺌
+   */
+  padding:0;
+  margin:0;
+  overflow:hidden;
+}
+header li {
+  padding:0;
+  margin:0;
+  float:left;
+  width:33.333333%;
+  background:#000;
+}
+header a {
+  display:block;
+  padding:35px;
+  color:#fff;
+}
+/**
+ * :hover
+ * 사파리에서는 a요소에 :hover를 넣을 경우 버튼을 두번 클릭해야 링크 이동
+ */

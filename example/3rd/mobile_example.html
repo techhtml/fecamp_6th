@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>모바일 예제</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="mobile_layout.css">
+    <meta name="viewport" content="initial-scale=1,width=device-width" />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--
+      - viewport
+      - 여러분들이 보는 사이트의 디스플레이 단위를 뷰포트
+      - viewport를 설정하지 않을 경우 모바일에서 웹사이트를 들어가게 될 경우,
+        내 사이트는 970px이 기본이라고 정의되어있음
+      - 웹사이트 (PC를 위해서)
+      - <div class="main"></div>
+      - .main {width:970px; margin: auto;}
+      - initial-scale = "기본 확대값"
+        - 내 스마트폰이 기본으로 보여주는 width가 기본 값
+      - maximum-scale = "최대 확대값"
+      - minimum-sacle = "최대 축소값"
+      - user-scalable = {true, false} "유저가 확대를 하게 할 건지"
+      - device-width : 내 디바이스의 가로 사이즈
+        - width=device-width
+        - 이 사이트의 가로사이즈를 내 기기의 가로사이즈 맞추겠다
+        - width:100%; (기기의 가로사이즈)
+      - 아이폰 가로사이즈 (320px)
+      - PC사이트 개발할 때 저걸 안써도 될까?
+        - 여력이없어서 PC사이트밖에 개발을 못함
+        - 일단 PC부터 만들고 모바일을 나중에 대응하자.
+        - 태블릿PC를 위해서 Viewport를 작성해주는 게 좋습니다.
+     -->
+  </head>
+  <body>
+    <!--
+           헤더
+     [     로고     ]
+     [메뉴][메뉴][메뉴]
+           메인
+    [              ]
+    [              ]
+    [              ]
+    [              ]
+    [              ]
+    [              ]
+    -->
+    <header>
+      <div>
+        <h1>로고</h1>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#">메뉴 2</a></li>
+            <li><a href="#">메뉴 3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

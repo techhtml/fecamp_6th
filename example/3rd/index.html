@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="fast-layout.css" />
+    <style>
+    .info dt {
+      color:#aaa;
+    }
+    nav a {
+      display:block;
+      padding:13px 0 11px;
+      text-align:center;
+      color:#aaa;
+      background:#333;
+      text-decoration:none;
+    }
+    nav a:hover {
+      background:hotpink;
+      color:#fff;
+    }
+    </style>
+    <title>패스트캠퍼스</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>패스트캠퍼스</h1>
+      </div>
+      <div class="info flexbox flexbox_all">
+        <dl class="flexbox flex_left">
+          <!-- definition list -->
+          <!-- 정의 목록 -->
+          <dt>강의</dt>
+          <!-- definition term -->
+          <!-- HTML5가 되면서 그냥 얘는 name 목적으로 사용 가능 -->
+          <dd>30분</dd>
+          <!-- definition description -->
+          <!-- name하고 쌍인 값, value -->
+        </dl>
+        <dl class="flexbox flex_2 flex_center">
+          <dt>점심값</dt>
+          <dd>275,000원</dd>
+        </dl>
+        <dl class="flexbox flex_right">
+          <dt>회식건</dt>
+          <dd>0건</dd>
+        </dl>
+      </div>
+      <div>
+        <nav>
+          <ul class="flexbox flexbox_all">
+            <li><a href="#">강의중 7건</a></li>
+            <li><a href="#">강의등록</a></li>
+            <li><a href="#">강의조회</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+    </main>
+  </body>
+</html>

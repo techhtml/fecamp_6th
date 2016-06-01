@@ -1,0 +1,80 @@
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  /* 이 위쪽까지는 좀 많이 옛날 브라우저 (안드로이드 2.3 이하, MS같은 경우는 PC지원) */
+  display: -webkit-flex;
+  display: flex;
+}
+/**
+ * universal selector
+ * 전역 셀렉터
+ */
+
+/**
+ * > 셀렉터는 부모 바로 밑 자식
+ */
+
+.flexbox.flexbox_all > * {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flex_1 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flex_2 {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.flexbox > .flex_left {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.flexbox > .flex_center {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flexbox > .flex_right {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.flexbox > .flex_around {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;;
+}
+
+dl, dt, dd, ul, li, p, h1, h2, h3, h4, h5, h6 {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+/*
+.info dt {
+  min-width: 45px;
+  max-width: 45px;
+  width: 45px;
+}
+
+.info dl:first-of-type dt {
+  min-width: 65px;
+  max-width: 65px;
+  width: 65px;
+}
+*/
