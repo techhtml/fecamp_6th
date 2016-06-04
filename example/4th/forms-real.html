@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Hello Forms</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+      .forms {
+        margin:10px;
+      }
+      .txt_input {
+        display:block;
+        width:100%;
+        margin-bottom:10px;
+        font-size:20px;
+        padding:10px;
+        box-sizing:border-box;
+      }
+      .btn {
+        display:block;
+        /* 버튼 초기화 CSS */
+        border:0;
+        padding:10px 0;
+        margin:0;
+        background:#fff;
+        /* 모바일에서 iOS에서 강제로 인풋을 기본형태로 보여줄려고 함... */
+        -webkit-appearence: none;
+      }
+      .btn-full {
+        width:100%;
+      }
+      .btn-submit {
+        color:#fff;
+        background:#2ac1bc;
+      }
+    </style>
+    <style>
+    .radio-group {
+      overflow:hidden;
+    }
+    .radio {
+      float:left;
+      width:33.333333%;
+    }
+    .radio label {
+      position:relative;
+      display:block;
+      padding:5px 0 10px 30px;
+    }
+    .radio label:before {
+      content:'';
+      display:block;
+      position:absolute;
+      left:0;
+      top:0;
+      width:25px;
+      height:25px;
+      border:1px solid #666;
+      background:#fff;
+      border-radius:100%;
+    }
+    .radio input[type="radio"]:checked + label {
+      color:#eb2000;
+    }
+    .radio input[type="radio"]:checked + label:before {
+      border-color:#eb2000;
+    }
+    .radio input[type="radio"]:checked + label:after {
+      content:'';
+      display:block;
+      position:absolute;
+      left:6px;
+      top:6px;
+      width:15px;
+      height:15px;
+      background:#eb2000;
+      border-radius:100%;
+    }
+    .radio input[type="radio"] {
+      position:absolute;
+      visibility: hidden;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- input은 inline-block 요소 -->
+    <!-- input은 상속 받지 않아요. -->
+    <div class="forms">
+      <input type="text" class="txt_input" placeholder="아이디" />
+      <input type="password" class="txt_input" placeholder="비밀번호" />
+      <input type="tel" class="txt_input" placeholder="전화번호" />
+      <input type="text" class="txt_input" placeholder="이름" />
+      <input type="text" class="txt_input" placeholder="주소" />
+      <div class="radio-group">
+        <div class="radio">
+          <input name="fastfood" id="chicken" type="radio" checked />
+          <label for="chicken">치킨</label>
+        </div>
+        <div class="radio">
+          <input name="fastfood" id="beer" type="radio" />
+          <label for="beer">맥주</label>
+        </div>
+        <div class="radio">
+          <input name="fastfood" id="pizza" type="radio" />
+          <label for="pizza">피자</label>
+        </div>
+      </div>
+      <input type="submit" class="btn btn-full btn-submit" value="전송" />
+      <input type="reset" class="btn btn-full btn-submit" value="초기화" />
+    </div>
+  </body>
+</html>

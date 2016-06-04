@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello world</title>
+</head>
+<body>
+  <!--
+    - Front-End 개발자
+      - HTML, CSS, JS, AJAX 등을 활용하여 서버와 통신하고 (API가지고) 인터렉션을 개발하는 사람
+      - JS, AJAX만 전문적으로
+    - HTML, CSS만 전문적으로
+      - 한국 : 웹 퍼블리셔, UI개발자 (HTML, CSS, A little JavaScript)
+      - 일본 : 마크업 엔지니어
+      - 서양권 : HTML Engineer, Web Designer
+    - 디자이너, 개발자(프론트엔드, API개발, 서버개발, DB), 기획자, QA
+    - 기획자 (기획)
+    - 디자이너 (디자인)
+      - Front-End 엔지니어 (디자인을 받아서 HTML, CSS를 이용해 틀을 짠다)
+        - HTML과 CSS를 병렬로 진행 X
+        - HTML을 먼저 작성 > CSS를 나중에 (직렬 코딩)
+        - 모듈 단위 스프린트
+        - CSS 작성 순서
+          셀렉터 {
+            /* display */
+            display: block;
+            /* layout */
+            float: left;
+            /* box-model */
+            width: 180px;
+            height: 220px;
+            padding: 15px;
+            margin: 20px;
+            border: 1px solid #555;
+            /* fonts & background */
+            font-family: sans-serif;
+            color: #fff;
+            background; #000;
+            /* CSS3 ETC */
+            -webkit-animation: 1s loading infinite;
+            animation: 1s loading infinite;
+          }
+          - 표준 준수 여부 체크
+          - Lint (JSLint, ESLint)
+          - 테스트 (QUnit, 성능, 컨벤션)
+          - 크로스브라우징 (~IE9)
+            - IE7까지 지원하거나 IE9까지 지원하거나
+            - IE8은 좀 애매한 브라우저 중 하나
+      - Front-End 엔지니어 (backbone + handlebars + jquery + lodash, 동작 부여)
+      - 개발자 API 던져주면 Front-End 엔지니어가 갖다 붙임
+      - QA 돌리고 오픈
+   -->
+   <!--
+     - HTML Contents Model
+     - P요소 안에 p 요소 넣을 수 있나요?
+     - dl 요소 안에 p 요소 넣을 수 있나요?
+     - Flow 콘텐츠 : body 안에 들어갈 수 있는 모든 요소
+     - Sectioning 콘텐츠 : 헤더와 푸터의 스코프를 정의하는 콘텐츠 (요소)
+     - Phrasing 콘텐츠 : 문서의 텍스트
+
+     - UL 요소 밑에 P 요소를 쓰고싶어요. 어떻게 해야할까요?
+     - https://www.w3.org/TR/html51/dom.html#content-models
+   -->
+  <!--
+    - before Starting(...)
+      - how front-end enginner works
+    - HTML Contents Model
+
+    - Document Object Model (DOM)
+      - HTML, CSS, JavaScript
+      - HTML, CSS, DOM, JavaScript
+      - HTML DOM
+        - HTML을 객체화 시킨 것
+        - JavaScript에서 HTML을 제어할 수 있게 만든 것
+      - 문서는 트리구조
+      - HTML을 다 짜고, HTML의 구조를 DOM트리로 작성해보기
+
+    - HTML Input Elements & Forms & Labels
+      - 문서에서 유저에게 정보를 입력받고자 할 때 사용하는 HTML요소
+      - Form과 Input
+        - Input은 반드시 Form의 자식일 필요는 없음
+        - Form은 내가 서버에 전송할 Input의 집합
+        - Form 요소 밑에서는 flow content를 가질 수 있음
+        - Form 요소에 CSS 넣는건 비추
+
+    - HTML Table Elements
+      - Table Layout for Mail
+
+    - CSS Positioning
+      - relative & absolute
+      - fixed
+      - coordinate system
+
+    - CSS3 Transform & Transition & Animations
+
+    - (분량 조절 실패를 대비한...) CSS3 Media Queries
+  -->
+</body>
+</html>

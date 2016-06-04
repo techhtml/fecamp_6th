@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Transform &amp; Transition &amp; Animations</title>
+  <style>
+  html, body {
+    height:100%;
+    margin:0;
+    width:100%;
+    overflow:hidden;
+  }
+  .wrap {
+    height:100%;
+  }
+  .bg {
+    float:left;
+    width:50%;
+    height:100%;
+  }
+  .bg-yellow {
+    background:yellow;
+    animation:1s curtain_left ease;
+  }
+  .bg-green {
+    background:green;
+    animation:1s curtain_right ease;
+  }
+  @keyframes curtain_left {
+    0% {
+      transform:rotate(-90deg) translate3d(0, -100%, 0);
+    }
+    100% {
+      transform:rotate(0) translate3d(0, 0, 0);
+    }
+  }
+  @keyframes curtain_right {
+    0% {
+      transform:rotate(90deg) translate3d(0, -100%, 0);
+    }
+    100% {
+      transform:rotate(0) translate3d(0, 0, 0);
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bg bg-yellow"></div>
+    <div class="bg bg-green"></div>
+  </div>
+</body>
+</html>

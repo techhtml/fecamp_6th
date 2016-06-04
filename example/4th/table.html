@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Tables</title>
+  <style>
+    table {
+      width:100%;
+      border-collapse: collapse;
+      /* Table만을 위한 속성 */
+      table-layout:fixed;
+    }
+    table caption {}
+    table th {
+      border:1px solid #666;
+      height:33px;
+      vertical-align: middle;
+    }
+    table td {
+      border:1px solid #666;
+      height:33px;
+      vertical-align: middle;
+    }
+    /**
+     * table에서 CSS를 넣을 때는
+     * table, caption, th, td
+     */
+  </style>
+</head>
+<body>
+  <!--
+     - table
+     - 표
+     - 2003 ~ 2012년 사이에 개발된 코드를 보면..
+     - table로 된 게 아주 많습니다
+     - IE vs Navigator
+     - 그러면 table로 레이아웃을 짜자 (Table Layout)
+     - table로 레이아웃을 짜지 말자.
+    -->
+    <table>
+      <caption>이 테이블의 제목</caption>
+      <thead>
+        <tr>
+          <!-- table row -->
+          <th>메뉴명</th>
+          <!-- table header cell -->
+          <th>메뉴가격</th>
+        </tr>
+      </thead>
+      <!-- 셀의 제목 -->
+      <tfoot>
+        <tr>
+          <td>3개</td>
+          <!-- table data cell -->
+          <td>196,500</td>
+        </tr>
+      </tfoot>
+      <!-- 결과 -->
+      <tbody>
+        <tr>
+          <td>굽네치킨</td>
+          <td>174,500</td>
+        </tr>
+        <tr>
+          <td>치킨처럼</td>
+          <td>17,500</td>
+        </tr>
+        <tr>
+          <td>호치킨</td>
+          <td>4,500</td>
+        </tr>
+        <tr>
+          <!-- colspan -->
+          <td colspan="2">악녀치킨</td>
+        </tr>
+        <tr>
+          <!-- rowspan -->
+          <td rowspan="2">고추바사사사사사사사사사사사사사삭</td>
+          <td>18,000원</td>
+        </tr>
+        <tr>
+          <td>17,000원</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td>456</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>

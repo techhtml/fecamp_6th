@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='ko'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello position</title>
+    <style>
+      header {
+        position:fixed;
+        /* fixed는 고정, 브라우저의 좌표시스템 */
+        /* left, top, right, bottom */
+        right:50px;
+        bottom:0;
+        top:0;
+        width:220px;
+        background:red;
+        z-index: 20;
+      }
+      .ad {
+        position:sticky;
+        top:0;
+        left:0;
+        width:100%;
+        height:220px;
+        background:yellow;
+        z-index:100;
+      }
+      section {
+        position:relative;
+        border:1px solid #555;
+        padding:50px;
+        z-index: 10;
+      }
+      .comments {
+        position:absolute;
+        /* absolute : 절대값, 좌표를 이용하는 부모를 기준으로 좌표를 잡아요 */
+        left:10px;
+        bottom:0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      - HTML 코드 상에 존재하고 내 눈에도 보이는데
+      - 다른 HTML에 영향을 안미칠 수 있을까요?
+      - True (Position)
+      - 사실 모든 HTML은 서로한테 영향을 미침
+      - head안의 요소는 약간 번외격
+      -->
+      <!--
+        - position
+        - X, Y, Z
+        - 웹에는 좌표 시스템이 존재한다
+        - 좌표시스템을 사용하는게 Position
+      -->
+      <header>
+      </header>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+      <div class="ad"></div>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+      <section>
+        <h1>타이틀</h1>
+        <p>내용내용내용내용</p>
+        <p class="comments">덧글 50개</p>
+      </section>
+  </body>
+</html>
