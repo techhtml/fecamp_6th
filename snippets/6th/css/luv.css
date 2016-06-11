@@ -1,0 +1,93 @@
+body {
+  background:#555;
+}
+.ir {
+  position:absolute;
+  font-size:0;
+  line-height:0;
+  color:transparent;
+}
+header {
+  position:relative;
+  background: #fff;
+}
+header::after {
+  content:'';
+  display:block;
+  clear:both;
+}
+header h1 {
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin:0;
+  -webkit-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+}
+header nav {
+  float: left;
+}
+header nav a {
+  display:block;
+  position:relative;
+  width:45px;
+  height:45px;
+  font-size:0;
+  line-height:0;
+  color:transparent;
+}
+header nav a::before {
+  content:'';
+  display:block;
+  position:absolute;
+  left:5px;
+  top:18px;
+  width:30px;
+  height:2px;
+  background:#000;
+  transition:0.3s all ease;
+}
+header nav a::after {
+  content:'';
+  display:block;
+  position:absolute;
+  left:5px;
+  top:28px;
+  width:30px;
+  height:2px;
+  background:#000;
+  transition:0.3s all ease;
+}
+header nav a:hover {
+  background:#eee;
+}
+header nav a:hover::after {
+  transform:translate(0, -5px) rotate(135deg);
+}
+header nav a:hover::before {
+  transform:translate(0, 5px) rotate(-135deg);
+}
+header .search {
+  float: right;
+}
+header .search button,
+header .search button:hover,
+header .search button:active {
+  padding:8px 15px;
+  margin:0;
+  border:0;
+  background:#fff;
+  font-size:24px;
+  cursor:pointer;
+}
+header .search button:hover {
+  background:#eee;
+}
+.menu {
+  position:fixed;
+  left:0;
+  top:0;
+  bottom:0;
+  -webkit-transform:translate(-100%, 0);
+  transform:translate(-100%, 0);
+}
